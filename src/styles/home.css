@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap%27');
+
+body, head, * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Header {
+    background-image: url(/animai_bkg.png); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+}
