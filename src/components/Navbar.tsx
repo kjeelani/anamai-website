@@ -37,42 +37,45 @@ const Links: NLink[] = [
 ]
 
 const NavLink = (props: NavLinkProps) => {
-    const activeColor = 'pink.700';
-    const unactiveColor = 'gray.200';
+    const activeColor = 'blue.600';  // Changed to blue.700
+    const unactiveColor = 'blue.600';
+    const textColor = 'white';  // Added text color as white
     return (
         <>
-    {props.active 
-    ? 
-    <Box
-        as="a"
-        px={"2vw"}
-        py={"2.67vh"}
-        rounded={'sm'}
-        backgroundColor={activeColor}
-        _hover={{
-        textDecoration: 'none',
-        bg: activeColor,
-        }}
-        href={props.url}>
-        {props.name}
-    </Box> 
-    : 
-    <Box
-        as="a"
-        px={"2vw"}
-        py={"2.67vh"}
-        rounded={'sm'}
-        _hover={{
-        textDecoration: 'none',
-        bg: unactiveColor,
-        }}
-        href={props.url}>
-        {props.name}
-    </Box> 
-    }
-    </>
+            {props.active 
+            ? 
+            <Box
+                as="a"
+                px={"2vw"}
+                py={"2.67vh"}
+                rounded={'sm'}
+                backgroundColor={activeColor}
+                color={textColor}  // Added text color
+                _hover={{
+                textDecoration: 'none',
+                bg: activeColor,
+                }}
+                href={props.url}>
+                {props.name}
+            </Box> 
+            : 
+            <Box
+                as="a"
+                px={"2vw"}
+                py={"2.67vh"}
+                rounded={'sm'}
+                _hover={{
+                textDecoration: 'none',
+                bg: unactiveColor,
+                }}
+                href={props.url}>
+                {props.name}
+            </Box> 
+            }
+        </>
     )
 }
+
 
 
 interface NavbarProps {
@@ -84,10 +87,10 @@ export default function Navbar(nvprops: NavbarProps) {
 
     return (
     <>
-        <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+        <Box bg={'blue.800'} color={'white'} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
             <Flex alignItems={'center'}>
-                <Text fontSize="lg" fontWeight="bold" color="purple.800">
+                <Text fontSize="lg" fontWeight="bold" color="white">
                     Animai
                 </Text>
             </Flex>

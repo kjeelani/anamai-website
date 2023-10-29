@@ -3,7 +3,6 @@
 import OpenAI from "openai";
 import { action } from "./_generated/server";
 import { internal } from "./_generated/api";
-import { Blob } from 'fetch-blob';
 
 export const send = action(
   async (ctx, { prompt }) => {
