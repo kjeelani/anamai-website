@@ -1,2 +1,2 @@
-# MC Eternal Modded Bingo
-A Next.js application for the MC Eternal Modded Bingo Challenge being hosted over the summer
+# Animai
+A full suite of AI-powered game development tools for indie game devs to iterate, test, and deploy assets.
